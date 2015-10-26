@@ -362,5 +362,7 @@ main = do
       , ppUrgent = xmobarColor myUrgentWSColor ""
         . wrap myUrgentWSLeft myUrgentWSRight
     }
+  , XMonad.focusFollowsMouse = False
+  , XMonad.clickJustFocuses = True
   }
     `additionalKeys` myKeys
