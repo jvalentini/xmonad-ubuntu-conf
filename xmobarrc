@@ -31,7 +31,8 @@ Config {
     -- If it's above 50%, we consider it high usage and make it red.
     Run Cpu [
       "-H","50",
-      "--high","red"
+      "--high","red",
+      "-p", "2" -- percent padding
     ] 10,
 
     -- Gather and format memory usage information
