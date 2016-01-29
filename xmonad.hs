@@ -204,9 +204,9 @@ myKeyBindings =
     , ((myModMask, xK_z), sendMessage MirrorExpand)
     , ((myModMask, xK_p), spawn "synapse")
     , ((myModMask, xK_u), focusUrgent)
-    , ((0, 0x1008FF12), spawn "amixer -q set Master toggle")
-    , ((0, 0x1008FF11), spawn "amixer -q set Master 10%-")
-    , ((0, 0x1008FF13), spawn "amixer -q set Master 10%+")
+    , ((0, 0x1008FF12), spawn "amixer -c 1 -q set Master toggle")
+    , ((0, 0x1008FF11), spawn "amixer -c 1 -q set Master 10%-")
+    , ((0, 0x1008FF13), spawn "amixer -c 1 -q set Master 10%+")
   ]
 
 
